@@ -2,3 +2,13 @@
 
 @use "../base" as *;
 @use "../components" as *;
+
+.section--new {
+    height: 737px;
+    background-color: $color-gray;
+
+    @include mobile {
+        height: 1509px;
+        background-image: $color-linear-gradient;
+    }
+}

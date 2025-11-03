@@ -2,3 +2,13 @@
 
 @use "../base" as *;
 @use "../components" as *;
+
+.footer {
+    height: 354px;
+    background-color: $color-black;
+    color: $color-white;
+
+    @include mobile {
+        height: 346px;
+    }
+}

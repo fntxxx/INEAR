@@ -2,3 +2,14 @@
 
 @use "../base" as *;
 @use "../components" as *;
+
+.section--style {
+    height: 944px;
+    background-color: $color-black;
+
+    @include mobile {
+        height: 2004px;
+        background-image: url("../img/bg-style.png");
+        background-size: 100% 100%;
+    }
+}

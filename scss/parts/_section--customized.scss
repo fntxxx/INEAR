@@ -2,3 +2,12 @@
 
 @use "../base" as *;
 @use "../components" as *;
+
+.section--customized {
+    height: 814px;
+    background-color: $color-gray-light;
+
+    @include mobile {
+        height: 1126px;
+    }
+}

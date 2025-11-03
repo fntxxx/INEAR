@@ -2,8 +2,11 @@
 
 // 色彩系統
 $color-white: #FFFFFF;
-$color-primary: #000000;
+$color-black: #000000;
+$color-gray: #2B2B2B;
+$color-gray-light: #404040;
 $color-linear-gradient: linear-gradient(120deg, #000000, #404040, #191919);
+$color-diamond-gradient: radial-gradient(#000000, #2A2A2A, #000000, #012022, #000000, #000000);
 
 // 字體設定
 $font-primary: 'Noto Sans TC', sans-serif;

@@ -2,3 +2,12 @@
 
 @use "../base" as *;
 @use "../components" as *;
+
+.section--hero {
+    height: 634px;
+    background-color: $color-black;
+
+    @include mobile {
+        height: 610px;
+    }
+}
