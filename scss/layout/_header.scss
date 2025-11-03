@@ -40,6 +40,10 @@
         height: 100%;
         padding: 8px;
 
+        &:hover {
+            border-bottom: 1px solid $color-black;
+        }
+
         p {
             color: $color-black;
             font: 400 16px/150% $font-primary;
