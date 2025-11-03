@@ -428,15 +428,68 @@ body {
 
 /* section--new.scss */
 .section--new {
-  height: 737px;
   background-color: #2B2B2B;
   padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
 }
 @media (max-width: 568px) {
   .section--new {
-    height: 1509px;
     background-image: linear-gradient(100deg, #000000, #404040, #191919);
+    padding: 60px 12px;
   }
+}
+.section--new__title {
+  text-align: center;
+  color: #FFFFFF;
+  font: 500 32px/150% "Noto Sans TC", sans-serif;
+}
+.section--new__products {
+  max-width: 1296px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+@media (max-width: 568px) {
+  .section--new__products {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+.section--new__product {
+  max-width: 416px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 568px) {
+  .section--new__product {
+    max-width: none;
+  }
+}
+.section--new-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.section--new__image {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 416/456;
+}
+@media (max-width: 568px) {
+  .section--new__image {
+    aspect-ratio: 1/1;
+  }
+}
+.section--new__product-title p {
+  color: #FFFFFF;
+  font: 500 16px/150% "Noto Sans TC", sans-serif;
 }
 
 /* section--style.scss */
