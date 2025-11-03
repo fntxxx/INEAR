@@ -187,7 +187,6 @@ template {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: blue 0.5px solid;
 }
 
 html,
@@ -659,11 +658,143 @@ body {
 
 /* section--customized.scss */
 .section--customized {
-  height: 814px;
   background-color: #404040;
+  padding: 65px 0;
 }
 @media (max-width: 568px) {
   .section--customized {
-    height: 1126px;
+    padding: 65px 12px;
+  }
+}
+.section--customized__content {
+  max-width: 1296px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 568px) {
+  .section--customized__content {
+    flex-direction: column-reverse;
+  }
+}
+.section--customized__wrapper {
+  max-width: 636px;
+  width: 100%;
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 568px) {
+  .section--customized__wrapper {
+    gap: 16px;
+  }
+}
+.section--customized__image-wrapper {
+  max-width: 306px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 568px) {
+  .section--customized__image-wrapper {
+    gap: 16px;
+  }
+}
+.section--customized__image-wrapper:nth-child(1) {
+  padding-top: 48px;
+}
+.section--customized__image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+}
+.section--customized__form {
+  max-width: 636px;
+  width: 100%;
+  max-height: 674px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+}
+.section--customized__form-title {
+  color: #FFFFFF;
+}
+.section--customized__form-title h2 {
+  font: 500 32px/120% "Noto Sans TC", sans-serif;
+  text-align: center;
+}
+.section--customized__form-title p {
+  font: 400 16px/150% "Noto Sans TC", sans-serif;
+}
+.section--customized__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0;
+  border: none;
+}
+.section--customized__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media (max-width: 568px) {
+  .section--customized__field--lg {
+    display: none;
+  }
+}
+.section--customized__field--sm {
+  display: none;
+}
+@media (max-width: 568px) {
+  .section--customized__field--sm {
+    display: block;
+  }
+}
+.section--customized__label {
+  color: #FFFFFF;
+  font: 400 16px/150% "Noto Sans TC", sans-serif;
+}
+.section--customized__input {
+  width: 100%;
+  height: 56px;
+  padding: 16px 12px;
+  background-color: transparent;
+  border: 1.5px solid #FFFFFF;
+  border-radius: 4px;
+  color: #ACACAC;
+}
+@media (max-width: 568px) {
+  .section--customized__input {
+    color: #FFFFFF;
+  }
+}
+.section--customized__input::placeholder {
+  color: #ACACAC;
+}
+@media (max-width: 568px) {
+  .section--customized__input::placeholder {
+    color: #FFFFFF;
+  }
+}
+.section--customized__button {
+  width: 88px;
+  height: 36px;
+  cursor: pointer;
+  align-self: flex-end;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+}
+@media (max-width: 568px) {
+  .section--customized__button {
+    width: 100%;
+    height: 56px;
   }
 }/*# sourceMappingURL=all.css.map */
