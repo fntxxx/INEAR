@@ -251,6 +251,9 @@ body {
   height: 100%;
   padding: 8px;
 }
+.nav__link:hover {
+  border-bottom: 1px solid #000000;
+}
 .nav__link p {
   color: #000000;
   font: 400 16px/150% "Noto Sans TC", sans-serif;
@@ -788,6 +791,10 @@ body {
   background-color: #FFFFFF;
   border: none;
   border-radius: 4px;
+}
+.section--customized__button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
 }
 @media (max-width: 568px) {
   .section--customized__button {
