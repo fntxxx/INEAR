@@ -6,6 +6,7 @@
 .section--new {
     height: 737px;
     background-color: $color-gray;
+    padding: 60px 0;
 
     @include mobile {
         height: 1509px;
