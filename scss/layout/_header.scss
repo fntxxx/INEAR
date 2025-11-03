@@ -1,0 +1,74 @@
+/* header.scss */
+
+@use "../base" as *;
+@use "../components" as *;
+
+.nav {
+    max-width: 1760px;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 80px;
+
+    @include mobile {
+        margin: 0 12px;
+    }
+
+    &__logo {
+        width: 80px;
+        height: 33px;
+    }
+
+    &__links {
+        max-width: 432px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 1;
+
+        &--lg {
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+
+    &__link {
+        @include link--neutral;
+        height: 100%;
+        padding: 8px;
+
+        p {
+            color: $color-black;
+            font: 400 16px/150% $font-primary;
+        }
+    }
+
+    &__icon-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__icon {
+        width: 56px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-menu {
+            display: none;
+
+            @include mobile {
+                display: flex;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

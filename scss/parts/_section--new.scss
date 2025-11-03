@@ -1,0 +1,73 @@
+/* section--new.scss */
+
+@use "../base" as *;
+@use "../components" as *;
+
+.section--new {
+    background-color: $color-gray;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+
+    @include mobile {
+        background-image: $color-linear-gradient;
+        padding: 60px 12px;
+    }
+
+    &__title {
+        text-align: center;
+        color: $color-white;
+        font: 500 32px/150% $font-primary;
+    }
+
+    &__products {
+        max-width: 1296px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        @include mobile {
+            flex-direction: column;
+            gap: 48px;
+        }
+    }
+
+    &__product {
+        max-width: 416px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @include mobile {
+            max-width: none;
+        }
+    }
+
+    &-image-wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        aspect-ratio: 416 / 456;
+
+        @include mobile {
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    &__product-title {
+        p {
+            color: $color-white;
+            font: 500 16px/150% $font-primary;
+        }
+    }
+}

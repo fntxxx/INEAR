@@ -1,0 +1,9 @@
+/* links.scss */
+
+@use "../base" as *;
+
+@mixin link--neutral {
+    @include flex-center;
+    text-decoration: none;
+    white-space: nowrap;
+}
