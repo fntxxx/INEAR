@@ -3,17 +3,17 @@
 @use "../base" as *;
 @use "../components" as *;
 
+.header {
+    padding: 0 12px;
+}
+
 .nav {
     max-width: 1760px;
     height: 88px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 80px;
-
-    @include mobile {
-        margin: 0 12px;
-    }
+    margin: 0 auto;
 
     &__logo {
         width: 80px;

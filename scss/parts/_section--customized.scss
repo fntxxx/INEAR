@@ -5,11 +5,7 @@
 
 .section--customized {
     background-color: $color-gray-light;
-    padding: 65px 0;
-
-    @include mobile {
-        padding: 65px 12px;
-    }
+    padding: 65px 12px;
 
     &__content {
         max-width: 1296px;
@@ -71,6 +67,10 @@
 
         &-title {
             color: $color-white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
 
             h2 {
                 font: 500 32px/120% $font-primary;
