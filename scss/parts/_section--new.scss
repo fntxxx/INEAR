@@ -5,7 +5,7 @@
 
 .section--new {
     background-color: $color-gray;
-    padding: 60px 0;
+    padding: 60px 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +13,6 @@
 
     @include mobile {
         background-image: $color-linear-gradient;
-        padding: 60px 12px;
     }
 
     &__title {
